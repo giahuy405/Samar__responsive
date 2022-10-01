@@ -81,6 +81,9 @@ header .header__content nav{
 header .header__content nav li:hover span{
     animation: upToDown 0.25s forwards;
 }
+.header__content i{
+    display: none;
+}
 .carousel{
     background-image: url(../img/pic2.png);
     background-size: 100%;
@@ -144,6 +147,10 @@ header .header__content nav li:hover span{
 .carousel__banner{
     width:570px ;
     margin-left: 50px;
+    
+}
+.carousel__banner img{
+    width: 100%;
 }
 .service{
     padding: 80px 0;
@@ -251,6 +258,7 @@ header .header__content nav li:hover span{
     text-align: center;
     border-radius: 8px;
     position: fixed;
+    z-index: 999;
     bottom: 25px;
     right: 25px;
     box-shadow: -1px 1px 7px 0px #f55f8d;
@@ -851,6 +859,7 @@ header .header__content nav li:hover span{
     background-image: url(../img/pattern3.png);
     background-size: cover;
     background-position: bottom;
+    box-shadow: 0 0 10px 0 rgb(199, 199, 199);
 }
 .footer__top h3{
     margin-right: 200px;
@@ -1034,6 +1043,301 @@ header .header__content nav li:hover span{
 }
 
 
-@media screen and(w) {
+@media screen and (max-width:1200px){
+
+}
+@media screen and (max-width:992px){
+
+}
+@media screen and (max-width:768px){
+
+}
+
+/***************** mobile **************/
+@media screen and (max-width:640px) {
+    .header__content nav{
+        display: none!important;
+    }
+    .header__content i{
+        display: block;
+    }
+    .header__content a img{
+        width: 34vw;
+        display: block;
+    }
+    .carousel .title{
+        width: 80%;
+    }
+    .title p{
+        font-size: 3vw;
+        margin-bottom: 1vw;
+    }
+    .title h2{
+        font-size: 4vw;
+        line-height: 4vw;
+        margin-bottom: 1vw;
+    }
+    .blog__body h3 {
+        font-size: 5vw;
+    }
+    .blog__body p{
+        font-size:4vw;
+    }
+    .blog__body{
+        padding: 11vw 4vw 2vw;
+    }
+    .carousel .btn{
+        padding: 3vw 7.2vw;
+    font-size: 2.5vw;
+    }
+
+    .carousel{
+        padding-top: 20%;
+    }
+    .carousel__content{
+        padding-top: 10%;
+    }
+    .carousel__text p{
+        font-size: 2vw;
+        margin-bottom: 1vw;
+        padding-right: 3vw;
+    }
+    .carousel__text li{ 
+        margin-bottom: 1vw;
+    }
+    .carousel__text li i{
+        font-size: 2vw;
+        line-height: 2.5vw;
+        height: 2.5vw;
+        width: 2.5vw;
+        margin-right: 3px;
+    }
+    .carousel__text li span{
+        font-size: 2vw;
+    }
+    .carousel__img{
+        width: 70%;
+    }
+    .carousel__banner{
+        margin-left: 8vw;
+        width: 100%;
+    }
     
+    .btn{
+        padding: 2vw 2.2vw;
+        font-size: 1.5vw;
+    }  
+
+    .service{
+        padding: 8vw 0;
+    }
+    .service .title{
+        margin-bottom: 4vw;
+    }
+    .service__cards{
+        flex-wrap: wrap;
+    }
+    .service__content{
+        margin-bottom: 3vw;
+        box-shadow: 0px 0px 2vw 0vw #e6e6e6;
+        padding: 4vw 0;
+    }
+    .service__content h3{
+        font-size: 3vw;
+        padding: 1vw;
+    }
+    .service__content p{
+        font-size: 2vw;
+        padding: 0 20vw;
+    }
+    .service__content img{
+        width: 40%;
+    }
+
+    .about__img{
+        width: 83%;
+     
+        left: -35%;
+    }
+    .about__img img{
+        border-top-right-radius: 10vw;
+        border-bottom-right-radius: 10vw;
+    }
+    .about__text ul li i {
+        margin-right: 5px;
+        height: 8px;
+        width: 8px;
+        border: 1px solid #f55f8d;
+        border-radius: 50%;
+        line-height: 7px;
+       
+        font-size: 6px;
+        
+    }
+    .about__items{
+        padding: 8vw 0;
+    }
+    .about__text ul li{
+        margin-bottom: 1.5vw;
+    }
+    .about__content{
+        font-size: 2vw;
+    }
+    .about__text ul{
+        margin-bottom: 3.5vw;
+    }
+    .about__text p{
+        margin-bottom: 2vw;
+    }
+
+
+    .number{
+        padding: 5vw 0;
+        
+    }
+    .number__item i {
+        font-size: 3vw;
+        height: 30px;
+        width: 30px;
+        line-height: 30px;
+    }
+    .number__item h3 {
+        font-size: 4vw;
+        margin-top: 2vw;
+    }
+    .number__item span{
+        margin-right: 1.5vw;
+    }
+    .number__item p {
+        font-size: 2vw;
+    }
+    
+    .feature .title h2{
+        padding-right: 13vw;
+    }
+    .feature__item:nth-child(1){
+        padding-right: 5vw;
+    }
+    .feature__item:nth-child(2){
+        padding-left: 5vw;
+    }
+    .feature__item:nth-child(3){
+        padding-right: 5vw;
+    }
+    .feature__bg{
+        padding: 2vw;
+        border-radius: 1.5vw;
+        margin-bottom: 4vw;
+    }
+    .feature__bg h3 {
+        font-size: 2.25vw;
+        line-height: 2.9vw;
+    }
+    .feature__bg p{
+        font-size: 1.45vw;
+    }    
+    .feature__bg i{
+        font-size: 5vw;
+        margin-right: 2vw;   
+    }
+    .feature__img img {
+        max-width: 85%;
+    }
+    .feature__right{
+        overflow: hidden;
+    }
+    .portfolio{
+        padding: 0;
+    }
+    .portfolio__text{
+        font-size: 1vw;
+        padding: 3vw;
+    }
+    .portfolio__item{
+        border-radius: 2vw;
+    }
+    .portfolio__overlay{
+        padding: 1vw;
+    }
+    .portfolio__overlay i{
+        font-size: 8px;
+        height: 15px;
+        width: 15px;
+        line-height: 15px;
+        border-radius: 1px;
+    }
+    .portfolio__items{
+        gap: 2vw;
+    }
+
+    .plan__items{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .plan__item{
+        padding: 4vw;
+        box-shadow: 0 0 14px 2px rgb(219 219 219);
+    }
+    .plan__bg h3{
+        font-size: 4vw;
+    }
+    .plan__bg h4{
+        font-size: 9vw;
+    }
+    .plan__bg li{
+        margin-top: 1.75vw;
+        font-size: 3vw;
+    }
+    .plan__bg ul i{
+        height: 22px;
+        width: 22px;
+        line-height: 22px;
+    }
+    .plan__bg .btn{
+        margin: 4vw 0 0 0;
+        padding: 4vw 2.2vw;
+        font-size: 3.5vw;
+    }
+
+    .testimonial__text{
+        margin: 3vw;
+        padding: 3vw;
+    }
+    .footer__top{
+        padding: 3vw;
+        display: block;
+        top: -13vw;
+
+    }
+    .footer{
+        margin-top: 35vw;
+    }
+    .footer__top h3{
+        font-size: 5vw;
+        margin: 0;
+        margin-bottom: 2vw;
+        text-align: center;
+       
+    }
+    .footer__top input{
+        padding: 4vw 18vw;
+        width: auto;
+    }
+    .footer__top button{
+        padding: 4vw 5vw;
+    }
+    .footer__bottom{
+        
+        padding: 10vw 0;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+    }
+    .copyright__content{
+        max-width: 80%;
+    
+    }
+}
+@media screen and (max-width:320px){
+    
+     
 }

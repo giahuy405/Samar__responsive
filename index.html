@@ -32,6 +32,7 @@
         <a href="#">
             <img src="./img/logo-2.png" alt="">
            </a>
+           <i class="fa fa-bars"></i>
            <nav>
                 <ul>
                     <li><a href="#"><span>Home</span><i class="fa-solid fa-angle-down"></i></a></li>
@@ -43,9 +44,9 @@
                 </ul>
                 <button class="btn">GET A QUOTE</button>
            </nav>
+           
        </div>
     </header>
-     
     <section class="carousel">
         <div class="carousel__items container">
             <div class="carousel__content">
@@ -126,9 +127,7 @@
                 </div>
             </div>
         </div>
-    </section>
-    
-     
+    </section>  
     <section class="number">
         <div class="number__items container">
             <div class="number__item">
@@ -198,8 +197,6 @@
             </div>
         </div>
      </section>
-
-
      <section class="portfolio">
         <div class="portfolio__content container">
             <div class="title">
@@ -331,7 +328,6 @@
             </div>
         </div>
      </section>
-
      <section class="testimonial">
         <div class="title">
             <p>Testimonial</p>
@@ -602,9 +598,17 @@
         nav:false,
         dots:false,
         autoplay:true, 
-
-        items:3,
-        
+        responsive:{
+         0:{
+            items:1
+         },
+        600:{
+            items:1
+        },
+        1000:{
+            items:1
+        }
+    }
     })</script>
 </body>
 </html>

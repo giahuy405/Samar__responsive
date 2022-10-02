@@ -19,10 +19,7 @@
     <!-- =======font awesome======= -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!--======= google font======= -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Oswald:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="./css/index.css">
 </head>
@@ -32,7 +29,7 @@
         <a href="#">
             <img src="./img/logo-2.png" alt="">
            </a>
-           <i class="fa fa-bars"></i>
+           
            <nav>
                 <ul>
                     <li><a href="#"><span>Home</span><i class="fa-solid fa-angle-down"></i></a></li>
@@ -44,7 +41,7 @@
                 </ul>
                 <button class="btn">GET A QUOTE</button>
            </nav>
-           
+           <i class="fa fa-bars"></i>
        </div>
     </header>
     <section class="carousel">
@@ -411,10 +408,14 @@
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, dolorem?adipisicing elit. Non, dolorem?</p>
                    </div>
                     <div class="blog__footer">
-                        <i class="fa fa-user"></i>
+                        <div class="blog__author">
+                            <i class="fa fa-user"></i>
                         <h4>BY <span class="blog__name">JOHNE DOE</span></h4>
-                        <i class="fa-regular fa-message"></i>
+                        </div>
+                        <div class="blog__cmt">
+                            <i class="fa-regular fa-message"></i>
                         <h4>COMMENTS 15</span>
+                        </div>
                     </div>
                  </div>
                  <div class="blog__slider">
@@ -427,10 +428,14 @@
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, dolorem?adipisicing elit. Non, dolorem?</p>
                    </div>
                     <div class="blog__footer">
-                        <i class="fa fa-user"></i>
+                        <div class="blog__author">
+                            <i class="fa fa-user"></i>
                         <h4>BY <span class="blog__name">JOHNE DOE</span></span>
-                        <i class="fa-regular fa-message"></i>
+                        </div>
+                        <div class="blog__cmt">
+                            <i class="fa-regular fa-message"></i>
                         <h4>COMMENTS 15</h4>
+                        </div>
                     </div>
                  </div> 
                  <div class="blog__slider">
@@ -443,10 +448,14 @@
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, dolorem?adipisicing elit. Non, dolorem?</p>
                    </div>
                     <div class="blog__footer">
+                       <div class="blog__author">
                         <i class="fa fa-user"></i>
                         <h4>BY <span class="blog__name">JOHNE DOE</span></h4>
-                        <i class="fa-regular fa-message"></i>
+                       </div>
+                        <div class="blog__cmt">
+                            <i class="fa-regular fa-message"></i>
                         <h4>COMMENTS 15</h4>
+                        </div>
                     </div>
                  </div>
             </div>
@@ -455,13 +464,13 @@
       </section>
       <div class="footer">
         <div class="footer__top container ">
-            <h3>Subscribe To Our Newsletter</h3>
+           <div class="footer__title"> <h3>Subscribe To Our Newsletter</h3></div>
             <form action="#">
                 <input type="email" placeholder="Your Email Address">
                 <button><i class="fa-regular fa-paper-plane"></i></button>
             </form>
         </div>
-        <div class="footer__bottom container">
+        <div class="footer__bottom">
             <div class="footer__item">
                 <ul>
                     <li><a href="#"><img src="./img/logo-white.png" alt=""></a></li>
@@ -600,15 +609,17 @@
         autoplay:true, 
         responsive:{
          0:{
-            items:1
+            items:1,
          },
-        600:{
-            items:1
-        },
+        //  lỗi hiển thị* từ 625-762px hiển thị 3 items
+         620:{
+            items:1,
+             
+         },
         1000:{
-            items:1
+            items:3,
         }
-    }
+        },
     })</script>
 </body>
 </html>

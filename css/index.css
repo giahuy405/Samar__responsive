@@ -79,7 +79,7 @@ header .header__content nav{
 header .header__content nav li:hover span{
     animation: upToDown 0.25s forwards;
 }
-.header__content i{
+.header__content .fa-bars{
     display: none;
 }
 .carousel{

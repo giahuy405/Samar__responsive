@@ -348,9 +348,10 @@ header .header__content nav li:hover span{
     transition: all .5s;
 }
 .feature__bg h3{
-    font-size: 22px;
+    font-size: 20px;
     line-height: 2;
-   
+    line-height: 24px;
+    margin-bottom: 5px;
 }
 .feature__bg p{
     line-height: 1.5;
@@ -1116,9 +1117,10 @@ header .header__content nav li:hover span{
 
 
 @media screen and (max-width:992px){
-    header .header__content i{
+    header .header__content .fa-bars{
         display: block;
         font-size: 4vw;
+        color: black;
     }
     header .header__content nav{
         display: none;
@@ -1396,6 +1398,9 @@ header .header__content nav li:hover span{
     
 }
 @media screen and (max-width:567px){
+    header .header__content .fa-bars{
+        font-size: 25px;
+    }
     .carousel__text li i{
         margin-right:8px;
         font-size: 18px;
@@ -1419,6 +1424,9 @@ header .header__content nav li:hover span{
     .testimonial__text {
         padding: 20px 10px;
         margin: 10px 4px 0px;
+    }
+    .feature__bg p{
+        line-height: 1.35;   
     }
     .blog__header p{
         top:50.5vw;
